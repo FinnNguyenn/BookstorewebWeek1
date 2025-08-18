@@ -15,10 +15,6 @@ import java.sql.Statement;
 import java.util.*;
 
 
-/**
- *
- * @author huyph
- */
 public class BookDAO extends DAO{
     public boolean createBook(Books book) {
     String sql = "INSERT INTO Books(title, author, publisher, price, stockQuantity) VALUES (?, ?, ?, ?, ?)";
@@ -116,3 +112,4 @@ public class BookDAO extends DAO{
         return result;
     }
 }
+
